@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Recuperação Midian Silva</title>
+</head>
+<header>
+    <div class="container">
+        <div class="navbar">
+            <ul>
+                <a href="index.html"><h1>Jão</h1></a>
+                <!-- <li><a href="termos.html">Termos e Condições</a></li> -->
+            </ul>
+        </div>
+</header>
+
+<body>
+
+    <!-- Carrossel -->
+    <Section>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+
+                <img id="slide" src="jão.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img id="slide" src="jão1.jfif" style="width:100%">
+
+            </div>
+
+            <div class="mySlides fade">
+                <img id="slide" src="jão2.jpg" style="width:100%">
+
+            </div>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </Section> 
+     <h1>Música - Idiota</h1>
+<div class="video">
+  
+    <video width="320" height="240" controls="controls" autoplay="autoplay">
+        <source src="idiota.mp4" type="video/mp4">
+        <object data="" width="320" height="240">
+        <embed width="320" height="240" src="idiota.mp4">
+        </object>
+        </video>
+</div>
+
+    <div class="footer-basic">
+        <footer>
+            <div class="forms">
+                <form class="formulario">
+                    <label for="fname">Digite Seu Nome:</label><br>
+                    <input type="text" id="fname" name="fname" placeholder="Midian Silva 2°b"><br><br>
+                    <label for="email">Digite Seu Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="Email"> <br><br>
+                    <label for="fname">Digite Sua Senha:</label><br>
+                    <input type="password" id="fname" name="fname" placeholder="Matrícula"><br><br>
+                    
+                    <input type="submit">
+                </form>
+        
+            </div>
+<h1>Midian Silva</h1>
+        </footer>
+    </div>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 5000); // Change image every 2 seconds
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+
+</html>
+   
